@@ -1,0 +1,41 @@
+body {
+	background-image: url("../img/beantown.jpg");
+	background-size: cover;
+	color: white;
+	background-repeat: no-repeat;
+
+}
+
+#rowArea {
+	margin-top: 5px;
+	background-color: rgb(27, 10, 159);
+	border-color: white;
+	border-style: ridge;
+	border-width: 5px;
+	padding: 10px;
+}
+
+#noteArea {
+	color: #949694;
+}
+
+#noteForm {
+	background-color: #0fd03c;
+	padding: 20px;
+	position: fixed;
+	width: 30%;
+	top: 60px;
+	right: 10px;
+}
+
+
+
+
+
+.container {
+	margin-top: 55px;
+}
+
+.bg-inverse {
+	background-color: rgb(27, 10, 159)!important;
+}
