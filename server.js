@@ -21,13 +21,20 @@ var Article = require("./models/Article.js");
 
 var Note = require("./models/Note.js");
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-mongoose.connect(MONGODB_URI, {
-    useMongoClient: true
-  });
 
-mongoose.Promise = Promise;
 
+  mongoose.Promise = Promise;
+
+
+  if(process.env.MONGODB_URI) {
+      mongoose.connect(process.env.MONGODB_URI, {
+          useMongoClient: true
+      });
+  } else {
+      mongoose.connect("mongodb://localhost/sessionDB", {
+          useMongoClient: true
+      });
+  }
 
 var app = express();
 
